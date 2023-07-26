@@ -38,6 +38,7 @@ const FormPage = () => {
 <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
 <button className='mt-5 text-[#E7DBC9]'>More +</button>
 
+
 </div>
 </div>
 </div>
