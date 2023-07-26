@@ -2,26 +2,108 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --text-gradient: linear-gradient(210deg, #93835C 0%, #E7DBC9 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+@font-face {
+  font-family: MADE TOMMY;
+  src: url(/font/made_tommy/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+@font-face {
+  font-family: HORUS;
+  src: url(/font/HORUS\ NEW.OTF);
 }
+
+
+body{
+  color: white;
+}
+h2{
+  background: var(--text-gradient);
+  background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: MADE TOMMY;
+font-size: 60px;
+font-style: normal;
+font-weight: 500;
+line-height: 114%; /* 68.4px */
+letter-spacing: -1.2px;
+}
+h3{
+  color: #E7DBC9;
+font-family: HORUS;
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.525px;
+background: linear-gradient(90deg, #E7DBC9 0%, rgba(231, 219, 201, 0.00) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+h4{
+  font-family: HORUS;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 0.3px;
+background: linear-gradient(90deg, #E7DBC9 0%, rgba(231, 219, 201, 0.00) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+p{
+  color: #E7DBC9;
+font-family: MADE TOMMY;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 1.9px;
+
+}
+h5{
+  font-family: MADE TOMMY;
+}
+.nav-text{
+  background: linear-gradient(90deg, #E7DBC9 0%, rgba(231, 219, 201, 0.00) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.landing-bg{
+  background-image: url('/images/Landing Page.png');
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.landing-menu-bg{
+  background-image: url('/images/Landing Menu.png');
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.formpage-bg{
+    background-image: url('/images/form-bg.png');
+    background-size: 100% 100%;
+    height: 100vh;
+  
+}
+.features-bg{
+  background-image: url('/images/Features.png');
+  background-size: 100% 100%;
+  height: 100vh;
+
+}
+
+
