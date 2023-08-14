@@ -27,18 +27,33 @@ box-sizing: border-box;
 
 body{
   color: white;
+  background-image: url(/images/main-bg.png);
+  background-size: 100% 100%;
+  height: 100vh;
 }
-h2{
-  background: var(--text-gradient);
-  background-clip: text;
+
+
+
+p{
+  font-family: MADE TOMMY;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.24px;
+  background: linear-gradient(101deg, rgba(231, 219, 201, 1.00) 0%, rgba(231, 219, 201, 0.00) 210%);
+background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-font-family: MADE TOMMY;
-font-size: 60px;
-font-style: normal;
-font-weight: 500;
-line-height: 114%; /* 68.4px */
-letter-spacing: -1.2px;
+}
+h2{
+  font-family: MADE TOMMY;
+font-size: 25px;
+  background: linear-gradient(102deg, #FEF2E0 0%,#fef2e0db 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solidred;
 }
 h3{
   color: #E7DBC9;
@@ -64,17 +79,31 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
-p{
-  color: #E7DBC9;
-font-family: MADE TOMMY;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-letter-spacing: 1.9px;
 
-}
 h5{
   font-family: MADE TOMMY;
+}
+
+.scarab-btn{
+  border-radius: 18px;
+border: 1px solid rgba(255, 255, 255, 0.50);
+background: rgba(7, 7, 4, 0.50);
+backdrop-filter: blur(20px);
+}
+
+.era-btn{
+  background-image: url('/images/update-btn.png');
+  background-size: 100% 100%;
+}
+.update-btn{
+  background-image: url('/images/era-btn.png');
+  background-size: 100% 100%;
+}
+.stake-border{
+  border-radius: 15px;
+border: 1px solid rgba(255, 255, 255, 0.20);
+background: rgba(7, 7, 4, 0.50);
+backdrop-filter: blur(15px);
 }
 .nav-text{
   background: linear-gradient(90deg, #E7DBC9 0%, rgba(231, 219, 201, 0.00) 100%);
@@ -82,12 +111,23 @@ h5{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.landing-bg{
+.image-border{
+  border-radius: 18px;
+border: 1px solid rgba(255, 255, 255, 0.50);
+background: rgba(7, 7, 4, 0.50);
+backdrop-filter: blur(15px);
+}
+.btn-border{
+  border-radius: 6px;
+border: 1px solid #E7DBC9;
+background: rgba(0, 0, 0, 0.50);
+backdrop-filter: blur(20px);
+}
+/* .landing-bg{
   background-image: url('/images/Landing Page.png');
   background-size: 100% 100%;
   height: 100vh;
-}
+} */
 
 .landing-menu-bg{
   background-image: url('/images/Landing Menu.png');
@@ -125,10 +165,10 @@ h5{
   height: 100vh;
 }
 
-.pharox-bg{
-  background-image: url('/images/pharox.png');
+.pharax-bg{
+  background-image: url('/images/Become Pharok.png');
   background-size: 100% 100%;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .coming-god1-bg{

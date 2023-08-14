@@ -1,16 +1,48 @@
 import React from 'react'
+import Navebar from './Navebar'
 
 const LandingPage = () => {
   return (
-    <div className='landing-bg flex justify-end items-end '>
-      <div className='flex justify-between items-center gap-5 mb-20 max-w-[1100px] mx-auto'>
-        <div className='flex gap-10 items-center'>
-        <h2>Egyptian <br/> Era again</h2>
-      <p className=' w-[60%]' >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-    </p>
+    <div className='landing-bg relative '>
+      <div className=' mt-[300px] flex flex-col gap-10 justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2  -translate-y-1/2' >
+      <div className='flex  justify-between items-center w-full gap-20'>
+        <div>
+        <p>Scarab Price</p>
+        <h2>$0.0000000256</h2>
+        </div>
+        <div>
+        <p>Marketcap</p>
+        <h2>$1,664,815</h2>
+        </div>
+         <div className=' flex items-center'>
+          <img src="/images/coin.png" alt="coin" className='w-[150px]'/>
+          <div>
+        <p>Buy Scarab</p>
+        <h2>Now</h2>
+        </div>
+        </div>
     </div>
-    <button className='py-2 px-8 border-2 border-[#E7DBC9] transition-all hover:bg-[#5c5b5a] rounded-lg'>Enter</button>
-      </div>
+    <div className='flex  justify-between items-center w-full gap-20'>
+    <div className='py-10'>
+        <p>Treasury Bal</p>
+        <h2>$1,664,815</h2>
+        </div>
+        <div>
+        <p>TVL</p>
+        <h2>$1,664,815</h2>
+        </div> 
+        <div>
+        <p>Scarab Burned</p>
+        <h2>$1,664,815</h2>
+        </div>
+        <div>
+        <p>Rewards</p>
+        <h2>67.48 ETH</h2>
+        </div>
+    </div>
+  
+    </div>
+  
     </div>
   )
 }
