@@ -18,7 +18,7 @@ export default function Carroussel(props) {
   }, [props.offset, props.showArrows]);
 
   return (
-    <div
+    <div className="border"
       style={{ width: props.width, height: props.height, margin: props.margin }}
     >
       <Carousel

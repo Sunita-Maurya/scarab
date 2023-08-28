@@ -26,7 +26,6 @@ const StakeScarab = () => {
         <button className='btn-border w-full py-3 mt-5'>Approve</button>
          <p className='text-center my-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
         <button className='btn-border w-full py-3'>Claim Baracs</button>
-
         
            {/* -------------- withdraw  */}
            {/* <div className='mt-10'>
