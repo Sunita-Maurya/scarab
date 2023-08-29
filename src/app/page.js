@@ -15,9 +15,6 @@ export default function Home() {
 {/* <LandingPage/>  */}
 {/* <Features/> */}
 {ismyEra? <ConnectWallet/>:<LardFaraoh/>}
-
-
-
 {
   ismyEra==false&&<div className='font-[HORUS] text-2xl mt-10 flex md:gap-8 gap-2 items-center absolute  left-1/2 -translate-x-1/2 text-[#FEF2E0]'>
   <div  onClick={()=>setmyEra(true)} className='scane '>

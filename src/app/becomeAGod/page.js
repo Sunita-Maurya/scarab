@@ -1,6 +1,5 @@
 'use client'
 import BecomeADiety from '@/components/BecomeADiety'
-import DietyData from '@/components/DietyData'
 import Navebar from '@/components/Navebar'
 import React from 'react'
 

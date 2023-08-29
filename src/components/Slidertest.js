@@ -2,9 +2,10 @@ import React,{useState} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 
-let cards = [
+let sliderItems = [
   {
     key: 1,
     img:"/images/heros/1.png",
@@ -28,7 +29,7 @@ let cards = [
 ];
 
 
-const CenterMode = () => {
+const Slidertest = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const settings = {
     className: "center",
@@ -44,30 +45,33 @@ const CenterMode = () => {
 
 
   return (
-    <div>
-      <h2>Center Mode</h2>
+    <div className="pt-5">
       <Slider {...settings} >
 {
-  cards.map((item,index)=>
-  <div className="parent">
-  <div     className={`border p-3 h-full transition-all ${
+ sliderItems.map((item,index)=>
+  <Link key={index} href={`/becomeAGod/${item.key}`} className="parent">
+
+  <div className={`border  w-full  rounded-md p-3    h-transition-all ${
                 index === activeIndex
-                  ? "bg-[#EF8D30] active-img"
-                  : index === (activeIndex - 1 + cards.length) % cards.length
+                  ? "active-img "
+                  : index === (activeIndex - 1 + sliderItems.length) % sliderItems.length
                   ? "left-img"
-                  : index === (activeIndex + 1) % cards.length
+                  : index === (activeIndex + 1) % sliderItems.length
                   ? "right-img"
                   : ""
               }`}>
-    <img src={item.img} alt="img" className="w-full h-full"/>
-    <h1 className="text-2xl"> {item.key}</h1>
-   
+    <img src={item.img} alt="img" className="w-full rounded-md md:h-[300px] h-[150px]"/>
+    <div className="flex justify-between">
+    <h1 className="md:text-2xl text-sm">Diety {item.key}</h1>
+    <h1 className="md:text-2xl text-sm">#{item.key}</h1>
+</div>
   </div>
-  </div>)
+  </Link>
+)
 }       
       </Slider>
     </div>
   );
 };
 
-export default CenterMode;
+export default Slidertest;

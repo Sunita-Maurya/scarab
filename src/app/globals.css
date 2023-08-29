@@ -289,12 +289,16 @@ object-fit: cover !important;
 
 .parent{
   width: 200px;
-  height: 300px;
+  /* height: 300px; */
   border-radius:18px;
-  margin: 0px auto;
   perspective: 500px;
-  border: 2px solid green;
-
+  border-radius: 18px;
+ 
+}
+.active-img{
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  background: rgba(7, 7, 4, 0.50);
+  backdrop-filter: blur(15px);
 }
 
 .left-img{
@@ -305,6 +309,9 @@ object-fit: cover !important;
     transition: transform .5s;
     transform-style: preserve-3d;
     transform: rotateY(-30deg);
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(7, 7, 4, 0.50);
+    backdrop-filter: blur(15px);
 }
 .right-img{
   transform-origin: left;
@@ -314,16 +321,40 @@ object-fit: cover !important;
     transition: transform .5s;
     transform-style: preserve-3d;
     transform: rotateY(30deg);
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(7, 7, 4, 0.50);
+    backdrop-filter: blur(15px);
 }
+   
+
 @media screen and (max-width:425px) {
   .scane{
     height: 70px;
     width: 100px;
   }
+ /* .parent{
+  width: 200px;
+ } */
+ .slick-prev{
+  left: 40% !important;
+  top: 120% !important;
+   }
+   .slick-next{
+    left: 50% !important;
+    top: 120% !important;
+     }
+
 }
 @media screen and (max-width:768px) {
   body{
     background: #060404;
-
   }
+  .slick-prev{
+    left: 45% !important;
+    top: 110% !important;
+     }
+     .slick-next{
+      left: 55% !important;
+      top: 110% !important;
+       }
 }

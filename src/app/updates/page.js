@@ -6,7 +6,7 @@ const page = () => {
     <div>
     <Navebar/>
     <Features/>
-    <div className='font-[HORUS] text-2xl flex gap-8 items-center absolute bottom-8 left-1/2 -translate-x-1/2 text-[#FEF2E0]'>
+    <div className='font-[HORUS] text-2xl  flex gap-8 items-center absolute bottom-8 left-1/2 -translate-x-1/2 text-[#FEF2E0]'>
    <div className='scane'>
     <button className='left-btn  w-[240px] h-[90px] '>Scarab</button>
     </div>

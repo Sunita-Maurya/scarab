@@ -25,7 +25,7 @@ const ConnectWallet = () => {
         for your info</p>
         <button onClick={()=>setIsConnectWallet(true)} className='mt-5 px-8 py-3 text-[20px] border border-[#E7DBC9] rounded-2xl'>Connect wallet</button>
       </div>
-      {
+  
   <div className='font-[HORUS] text-2xl mt-20 flex md:gap-8 gap-2 items-center text-[#FEF2E0]'>
   <div  className='scane '>
    <button className='left-btn  md:w-[200px] md:h-[80px]  md:text-[20px] text-[16px] px-5 py-2   '>My Era</button>
@@ -35,7 +35,7 @@ const ConnectWallet = () => {
    <button className='right-btn   md:w-[200px] md:h-[80px]  md:text-[20px] text-[16px] px-5 py-2  '>Updates</button>
    </div>
  </div>  
-}
+
     </div>
   )
 }

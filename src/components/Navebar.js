@@ -18,7 +18,7 @@ const Navebar = () => {
   <img src="/images/bar.png" alt="logo" onClick={()=>setActiveNav(!activeNav)} className='cursor-pointer'/>
 </div>
 {
-  activeNav&&<div className='absolute  bg-black w-full md:hidden flex flex-col justify-between  font-[HORUS] py-14 gap-5 '>
+  activeNav&&<div className='absolute  z-30 bg-black w-full md:hidden flex flex-col justify-between  font-[HORUS] py-14 gap-5 '>
   <button className='navlink text-[#E7DBC9]'>ncient egypt </button>
   <button className='navlink text-[#E7DBC9]'>Security </button>
   <button className='navlink text-[#E7DBC9]'>Safety </button>

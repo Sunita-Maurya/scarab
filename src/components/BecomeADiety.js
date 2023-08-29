@@ -1,48 +1,13 @@
 import React from 'react'
-import Card from './card/Card';
-import Carroussel from './Carousel';
-import { v4 as uuidv4 } from "uuid";
 import Slidertest from './Slidertest';
-let cards = [
-  {
-    key: uuidv4(),
-    content: (
-      <Card data="1" imagen="/images/heros/1.png" />
-    )
-  },
-  {
-    key: uuidv4(),
-    content: (
-      <Card data="2" imagen="/images/heros/2.png" />
 
-    )
-  },
-  {
-    key: uuidv4(),
-    content: (
-      <Card data="3" imagen="/images/heros/3.png" />
-    )
-  },
-  {
-    key: uuidv4(),
-    content: (
-      <Card data="4" imagen="/images/heros/4.png" />
-    )
-  },
-  {
-    key: uuidv4(),
-    content: (
-      <Card data="5" imagen="/images/heros/5.png" />
-    )
-  }
-];
 const BecomeADiety = () => {
   return (
     <div className='max-w-[900px] mx-auto'>
-      {/* <div className='flex justify-between gap-10 items-center w-full stake-border p-7'>
+      <div className='flex justify-between lg:flex-row flex-col-reverse gap-10 items-center w-full stake-border p-7'>
         <div className='w-[250px]'>
           <p>Token staked</p>
-          <input type="range" className='w-full'/>
+          <input type="range" className='range w-full'/>
           <div className='flex justify-between'>
             <h2>39</h2>
             <h2>50</h2>
@@ -56,31 +21,31 @@ const BecomeADiety = () => {
           </div>
        
         </div>
-        <div className='flex items-center gap-3'>
+        <div className='lg:flex hidden items-center gap-3'>
             <p className='text-center'>Stake more to <br/>
         become a Deity</p>
-          <button className='mt-5 px-8 py-2 text-[20px] border border-[#E7DBC9] rounded-xl transition-all  hover:bg-[#4e4e4c80]'>Stake </button>
+          <button className=' px-8 py-2 text-[20px] border border-[#E7DBC9] rounded-xl transition-all  hover:bg-[#E7DBC9]'>Stake </button>
           </div>
-      </div> */}
+      </div>
  <Slidertest/>
+<div className='lg:hidden flex justify-center w-full my-20 '>
+ <button className=' w-[80%] mx-auto   px-8 py-2 text-[20px] border border-[#E7DBC9] rounded-xl transition-all  hover:bg-[#E7DBC9]'>Stake more </button>
+ </div> 
 
-    {/* <div className="">
-      <Carroussel
-        cards={cards}
-        // height="100px"
-        width="100%"
-        margin="200px auto"
-        offset={100}
-        showArrows={false}
-      />
-    </div> */}
-    {/* <div className='font-[HORUS] text-2xl absolute bottom-8 left-1/2 -translate-x-1/2 text-[#FEF2E0] '>
-    <button className='era-btn  w-[240px] h-[100px] '>Dietys</button>
-    <button className='scarab-btn w-[300px] h-[100px]  '>Dashboard</button>
-    <button className='update-btn   w-[240px] h-[100px] '>NFTs</button>
-  </div> */}
+    <div className='font-[HORUS] text-2xl mt-20 flex md:gap-8 gap-2 justify-center items-center text-[#FEF2E0]'>
+  <div  className='scane '>
+   <button className='left-btn  md:w-[200px] md:h-[80px]  md:text-[20px] text-[16px] px-5 py-2   '>Dietys</button>
+   </div>
+   <button className='middle-btn md:w-[250px] md:h-[90px]  md:text-[20px] text-[16px] px-4 py-4   '>Dashboard</button>
+  <div className='scane'>
+   <button className='right-btn   md:w-[200px] md:h-[80px]  md:text-[20px] text-[16px] px-5 py-2  '>NFTs</button>
+   </div>
+ </div>  
     </div>
   )
 }
 
 export default BecomeADiety
+
+  
+    
