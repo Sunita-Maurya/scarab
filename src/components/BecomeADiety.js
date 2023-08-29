@@ -4,10 +4,10 @@ import Slidertest from './Slidertest';
 const BecomeADiety = () => {
   return (
     <div className='max-w-[900px] mx-auto'>
-      <div className='flex justify-between lg:flex-row flex-col-reverse gap-10 items-center w-full stake-border p-7'>
-        <div className='w-[250px]'>
+      <div className='flex  justify-between lg:flex-row flex-col-reverse gap-10 items-center w-full stake-border p-7'>
+        <div className='w-[250px] '>
           <p>Token staked</p>
-          <input type="range" className='range w-full'/>
+          <input type="range" className='myrange w-full ' />
           <div className='flex justify-between'>
             <h2>39</h2>
             <h2>50</h2>
