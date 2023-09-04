@@ -358,18 +358,6 @@ object-fit: cover !important;
       top: 110% !important;
        }
 }
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -webkit-border-radius: 5px;
-  /*16x16px adjusted to be same as 14x14px on moz*/
-  height: 16px;
-  width: 16px;
-  border-radius: 5px;
-  background: #e7e7e7;
-  border: 1px solid #c5c5c5;
-}
-
 
 input[type="range"]::-moz-range-progress {
   background-color: #43e5f7; 
