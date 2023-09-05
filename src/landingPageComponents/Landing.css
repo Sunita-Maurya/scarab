@@ -60,3 +60,15 @@ background-color: #0c0c0c;
     transform: translate(-500px,0px);
 
   }
+.h1-heading{
+  font-family: MADE TOMMY;
+font-size: 50px;
+font-style: normal;
+font-weight: 500;
+line-height: 114%; /* 68.4px */
+letter-spacing: -1.2px;
+  background: linear-gradient(247deg, #93835C -21.26%, #E7DBC9 105.78%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
