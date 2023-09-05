@@ -30,12 +30,17 @@ box-sizing: border-box;
 
 body{
   color: white;
-  background-image: url(/images/main-bg.png);
-  background-size: 100% 100%;
+  /* background-image: url(/images/main-bg.png);
+  background-size: 100% 100%; */
   height: 100vh;
 }
 
+.dapp-bg{
+  background-image: url(/images/main-bg.png);
+  background-size: 100% 100;
+  height: 100vh;
 
+}
 
 p{
   font-family: MADE TOMMY;
@@ -358,17 +363,24 @@ object-fit: cover !important;
       top: 110% !important;
        }
 }
+/* =============== */
+.parallax-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Adjust the height as needed */
+  overflow: hidden;
+  position: relative;
+}
 
-input[type="range"]::-moz-range-progress {
-  background-color: #43e5f7; 
-}
-input[type="range"]::-moz-range-track {  
-  background-color: #9a905d;
-}
-/* IE*/
-input[type="range"]::-ms-fill-lower {
-  background-color: #43e5f7; 
-}
-input[type="range"]::-ms-fill-upper {  
-  background-color: #9a905d;
+.parallax-image {
+  background-image: url('/images/langding-page/landing-hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 0;
 }

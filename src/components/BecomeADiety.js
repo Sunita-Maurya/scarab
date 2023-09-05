@@ -7,7 +7,7 @@ const BecomeADiety = () => {
       <div className='flex  justify-between lg:flex-row flex-col-reverse gap-10 items-center w-full stake-border p-7'>
         <div className='w-[250px] '>
           <p>Token staked</p>
-          <input type="range" className='myrange w-full ' />
+          <input type="range" className='styled-slider w-full ' />
           <div className='flex justify-between'>
             <h2>39</h2>
             <h2>50</h2>

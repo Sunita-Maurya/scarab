@@ -117,7 +117,7 @@ const LardFaraoh = () => {
 
 {/* -------------------- */}
 
-      <div className='flex justify-center lg:flex-row flex-col md:mx-10 mx-5 gap-5  lg:mt-0 mt-10'>
+      {/* <div className='flex justify-center lg:flex-row flex-col md:mx-10 mx-5 gap-5  lg:mt-0 mt-10'>
       <Link href='/proposals' className='btn-border flex items-center lg:justify-center justify-between lg:p-2 p-4'>
         <div className=''>
           <p>Fulfill your <br/>obligations.</p>
@@ -141,7 +141,7 @@ for 2 weeks</p>
 </div>
         </div>
         </Link>
-      </div>
+      </div> */}
   
     </div>
   )
