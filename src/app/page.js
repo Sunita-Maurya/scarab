@@ -1,14 +1,21 @@
 'use client'
-import Footer from '@/components/Footer'
-
-import Navebar from '@/components/Navebar'
-import Landing from '@/landingPageComponents/Landing'
+import BecomeGod from '@/landingPageComponents/BecomeGod/BecomeGod'
+import Landing from '@/landingPageComponents/Landing/Landing'
+import { useState } from 'react'
 
 export default function Home() {
+  const [isClick, setIsClick] = useState(false);
 
   return (
-  <main className='relative '>
-<Landing/>
-  </main>
-  )
+    <main className='relative'>
+      <div className={isClick ? 'fade-in' : ''}>
+        {isClick ? (
+          <BecomeGod />
+        ) : (
+          <Landing setIsClick={setIsClick} />
+        )}
+      </div>
+    </main>
+  );
 }
+

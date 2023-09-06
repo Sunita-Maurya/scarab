@@ -30,18 +30,31 @@ background-color: #0c0c0c;
   .bg-move{
     transform: translate(-20px,0px);
   }
-  .hero{
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    align-items: end;
-    width: 1000px ;
-    /* height: 500px; */
-    transform: translate(10px,0px);
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-image: url(/images/landing-page/landing-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.1s ease-in-out;
+}
 
-    transition: transform 1s ease;
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/landing-page/landing-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.5s ease-in-out;
+}
 
-  }
   .hero-move{
     transform: translate(-50px,0px);
   }
@@ -71,4 +84,27 @@ letter-spacing: -1.2px;
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+}
+.contant{
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  display: flex;
+  align-items: center;
+  gap:10px;
+  z-index: 999;
+
+}
+@media screen and(max-width:768px) {
+
+}
+
+.mob-backgournd{
+  background-image: url(/images/landing-page/mob-bg.png);
+background-size: 100% 100%;
+}
+.mob-content{
+position: absolute;
+bottom: 10%;
 }
