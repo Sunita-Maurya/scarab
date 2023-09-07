@@ -160,19 +160,18 @@
     }, []);
   
     return (
-      <div className='bg-[#0c0c0c] w-full'>
+      <div className='bg-[#0a0a0a] w-full'>
     
       <div
         id="parallax"
         className='lg:block hidden'
         style={{
-          backgroundImage: ' url(/images/landing-page/landing-bg.png)',
+          backgroundImage: ' url(/images/landing-page/landing-bg1.png)',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: backgroundPosition,
           width: '100%',
           height: '100vh',
           position: 'relative',
-          backgroundColor: '#0c0c0c'
         }}
       >
           <div
@@ -205,12 +204,14 @@
         ></div>
         {/* Apply mix blend mode only to the first URL */}
         <div className='contant '>
-            <div className='  w-[300x] '>
+          <div className='flex gap-10 items-center'>
+          <div className='  w-[300x] '>
           <h1 className='h1-heading '>Egyptian  </h1>
           <h1 className='h1-heading flex gap-5'>Era <span>again</span> </h1>
           </div>
-          <p className='w-[50%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+          <p className=' '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
           <button onClick={()=>setIsClick(true)} className='btn-border px-8 py-2 '>Enter</button>
+        </div>
         </div>
         <div
           className="mix-blend-mode-div"

@@ -167,7 +167,7 @@
     }, []);
   console.log(backgroundPosition,"ghjk")
     return (
-      <div className='bg-[#0c0c0c] w-full'>
+      <div className='w-full'>
     
       <div
         id="parallax"
@@ -179,8 +179,8 @@
           backgroundSize: 'contain', // or 'contain' based on your preference
           height: '100vh',
           position: 'relative',
-          backgroundColor: '#0c0c0c',
-          overflow:'hidden'
+          backgroundColor: '#000',
+          overflow:'hidden',
         }}
       >
         <Navebar/>
