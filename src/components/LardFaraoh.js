@@ -126,7 +126,7 @@ const LardFaraoh = () => {
         </svg>
         </div>
         </Link>
-        <Link href='/becomeAGod'>
+        <Link href='/diety'>
         <div className=' flex '>
         <div className='btn-border lg:p-2 p-4 w-full flex lg:justify-start justify-between items-center'>
          <div className='flex items-center gap-5'>

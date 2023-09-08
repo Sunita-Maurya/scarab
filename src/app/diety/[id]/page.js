@@ -34,7 +34,7 @@ console.log("hjkl")
 //     return <p>Loading...</p>;
 //   }
   return (
-    <>
+    <div className='dapp-bg'>
     <Navebar/>
     <div className='max-w-[900px] mx-auto'>
     <div className='flex justify-between w-full gap-5   mt-10 '>
@@ -92,7 +92,7 @@ console.log("hjkl")
    <button className='right-btn   md:w-[200px] md:h-[80px]  md:text-[20px] text-[16px] px-5 py-2  '>NFTs</button>
    </div>
  </div> 
-  </>
+  </div>
   )
 }
 

@@ -25,11 +25,17 @@ let sliderItems = [
   {
     key: 5,
     img:"/images/heros/5.png",
+  }, {
+    key: 6,
+    img:"/images/heros/5.png",
+  } ,{
+    key: 7,
+    img:"/images/heros/5.png",
   }
 ];
 
 
-const Slidertest = () => {
+const AllDiety = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const settings = {
     className: "center",
@@ -39,19 +45,22 @@ const Slidertest = () => {
     slidesToShow: 3,
     speed: 500,
     centerPadding: "0",
+    rows: 2,
+
     beforeChange: (current, next) => setActiveIndex(next) , 
   };
 
 
 
   return (
-    <div className="pt-5">
+    <>
+      <div className="pt-5 max-w-[1200px] mx-auto border" >
       <Slider {...settings} >
 {
  sliderItems.map((item,index)=>
   <Link key={index} href={`/diety/${item.key}`} className="parent">
 
-  <div className={`border  w-full  rounded-md p-3    h-transition-all ${
+  <div className={`border   w-full  rounded-md p-3    h-transition-all ${
                 index === activeIndex
                   ? "active-img "
                   : index === (activeIndex - 1 + sliderItems.length) % sliderItems.length
@@ -71,7 +80,10 @@ const Slidertest = () => {
 }       
       </Slider>
     </div>
+ 
+    </>
+
   );
 };
 
-export default Slidertest;
+export default AllDiety;
