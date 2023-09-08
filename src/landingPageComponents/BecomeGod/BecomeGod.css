@@ -94,9 +94,27 @@ margin-top: 200px !important;
     height: 600px;
     width: auto;
   }
+  .tablel{
+    height: 500px;
+    width: auto;
+  }
+  .tabler{
+    height: 400px;
+    width: auto;
+  }
+ 
   @media screen and ((min-width:1024px) and (max-width:1651px)){
     .imgl,.imgr {
      height: 500px;
      width: auto;
     }
+    .tablel{
+      height: 400px;
+      width: auto;
+    }
+    .tabler{
+      height: 300px;
+      width: auto;
+    }
   }
+
